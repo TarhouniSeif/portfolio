@@ -8,7 +8,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import document from "../../assets/Document/TARHOUNI Seif acheteur étranger.pdf"
+import document from "../../assets/Document/TARHOUNI Seif acheteur étranger.pdf";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);

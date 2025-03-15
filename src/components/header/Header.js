@@ -51,8 +51,7 @@ function Header() {
               <a href="#experience">Expérience professionnelle</a>
             </li>
           )}
-          
-      
+
           {viewAchievement && (
             <li>
               <a href="#achievements">Réalisations</a>

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./AchievementCard.scss";
 
-export default function AchievementCard({ cardInfo, isDark }) {
+export default function AchievementCard({cardInfo, isDark}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.warn(`URL for ${name} not found`);
@@ -16,7 +16,7 @@ export default function AchievementCard({ cardInfo, isDark }) {
     <div className={`certificate-card ${isDark ? "dark-mode" : ""}`}>
       <div className="certificate-image-div">
         <img
-          src={cardInfo.image || "/default-image.jpg"} 
+          src={cardInfo.image || "/default-image.jpg"}
           alt={cardInfo.imageAlt || "Card Thumbnail"}
           className="card-image"
         />
@@ -55,13 +55,13 @@ AchievementCard.propTypes = {
     footer: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,
-        url: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired
       })
-    ),
+    )
   }).isRequired,
-  isDark: PropTypes.bool,
+  isDark: PropTypes.bool
 };
 
 AchievementCard.defaultProps = {
-  isDark: false,
+  isDark: false
 };

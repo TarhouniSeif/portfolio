@@ -5,13 +5,13 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 //import { PiMicrosoftExcelLogoFill, PiMicrosoftPowerpointLogoFill, PiMicrosoftWordLogoFill } from "react-icons/pi";
-import sage3 from "./assets/images/Sage-X3-logo.png"
-import Access from "./assets/images/Access.png"
-import Photoshop from "./assets/images/Photoshop.png"
-import Illustrator from "./assets/images/Illustrator.png"
-import Excel from "./assets/images/Excel.png"
-import PowerPoint from "./assets/images/PowerPoint.png"
-import Word from "./assets/images/Word.png"
+import sage3 from "./assets/images/Sage-X3-logo.png";
+import Access from "./assets/images/Access.png";
+import Photoshop from "./assets/images/Photoshop.png";
+import Illustrator from "./assets/images/Illustrator.png";
+import Excel from "./assets/images/Excel.png";
+import PowerPoint from "./assets/images/PowerPoint.png";
+import Word from "./assets/images/Word.png";
 // Splash Screen
 
 const splashScreen = {
@@ -35,7 +35,7 @@ const greeting = {
   resumeLink:
     //"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
     require("./assets/Document/TARHOUNI Seif acheteur étranger.pdf"),
-    // Set to empty to hide the button
+  // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -59,15 +59,21 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "CE QUE JE FAIT",
   //subTitle: "Je collabore avec des fournisseurs internationaux pour garantir l'accès aux meilleurs composants et équipements. ",
-  subTitle:"Acheteur étranger et responsable des achats avec une large expérience dans la gestion des fournisseurs, la négociation des contrats et l'approvisionnement international. J'excelle dans l'utilisation des outils bureautiques et logiciels spécialisés pour optimiser les processus d'achat.",
+  subTitle:
+    "Acheteur étranger et responsable des achats avec une large expérience dans la gestion des fournisseurs, la négociation des contrats et l'approvisionnement international. J'excelle dans l'utilisation des outils bureautiques et logiciels spécialisés pour optimiser les processus d'achat.",
   skills: [
+    emoji("⚡Gestion et suivi des achats internationaux"),
     emoji(
-      "⚡Gestion et suivi des achats internationaux"),
-    emoji("⚡ Négociation avec les fournisseurs pour garantir les meilleures conditions d'achat"),
+      "⚡ Négociation avec les fournisseurs pour garantir les meilleures conditions d'achat"
+    ),
     emoji("⚡ Analyse des coûts et optimisation des budgets"),
-    emoji("⚡ Utilisation avancée des outils Microsoft Office pour la gestion des données"),
+    emoji(
+      "⚡ Utilisation avancée des outils Microsoft Office pour la gestion des données"
+    ),
     emoji("⚡ Maîtrise des logiciels de gestion ERP, notamment Sage X3"),
-    emoji("⚡ Compétences en design avec Photoshop et Illustrator pour la création de supports professionnels"),
+    emoji(
+      "⚡ Compétences en design avec Photoshop et Illustrator pour la création de supports professionnels"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -76,39 +82,71 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Excel",
-      icon: <img src={Excel} alt="Excel" style={{ width: "40px", height: "40px" }} />
-      //icon: <PiMicrosoftExcelLogoFill />,  
-      
+      icon: (
+        <img src={Excel} alt="Excel" style={{width: "40px", height: "40px"}} />
+      )
+      //icon: <PiMicrosoftExcelLogoFill />,
     },
     {
       skillName: "Word",
       //icon: <PiMicrosoftWordLogoFill />
-      icon: <img src={Word} alt="Word" style={{ width: "40px", height: "40px" }} />
+      icon: (
+        <img src={Word} alt="Word" style={{width: "40px", height: "40px"}} />
+      )
       //fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
       skillName: "PowerPoint",
-      icon: <img src={PowerPoint} alt="PowerPoint" style={{ width: "40px", height: "40px" }} />
+      icon: (
+        <img
+          src={PowerPoint}
+          alt="PowerPoint"
+          style={{width: "40px", height: "40px"}}
+        />
+      )
       //icon: <PiMicrosoftPowerpointLogoFill />
     },
     {
       skillName: "Access",
-      icon: <img src={Access} alt="Access" style={{ width: "40px", height: "40px" }} />
+      icon: (
+        <img
+          src={Access}
+          alt="Access"
+          style={{width: "40px", height: "40px"}}
+        />
+      )
     },
     {
       skillName: "Sage X3",
       //fontAwesomeClassname: "fab fa-react"
-      icon: <img src={sage3} alt="Sage X3" style={{ width: "40px", height: "40px" }} />
+      icon: (
+        <img
+          src={sage3}
+          alt="Sage X3"
+          style={{width: "40px", height: "40px"}}
+        />
+      )
     },
     {
       skillName: "Photoshop",
-      icon: <img src={Photoshop} alt="Photoshop" style={{ width: "50px", height: "40px" }} />
+      icon: (
+        <img
+          src={Photoshop}
+          alt="Photoshop"
+          style={{width: "50px", height: "40px"}}
+        />
+      )
     },
     {
       skillName: "Illustrator",
-      icon: <img src={Illustrator} alt="Illustrator" style={{ width: "50px", height: "40px" }} />
-    },
-    
+      icon: (
+        <img
+          src={Illustrator}
+          alt="Illustrator"
+          style={{width: "50px", height: "40px"}}
+        />
+      )
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -122,22 +160,22 @@ const educationInfo = {
       schoolName: "Centre de formation ELITE",
       logo: require("./assets/images/Elite.png"),
       subHeader: "Dimplôme BTS en commerce international",
-      duration: "Septembre 2017 - Juin 2018",
+      duration: "Septembre 2017 - Juin 2018"
       //desc: "Participated in the research of XXX and published 3 papers.",
       //descBullets: [
-        //"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        //"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       //]
     },
     {
       schoolName: "Lycée secondaire Grombalia",
       logo: require("./assets/images/Lycee.png"),
       subHeader: "Baccalauréat en sciences technologiques",
-      duration: "Septembre 2011 - Juin 2014",
+      duration: "Septembre 2011 - Juin 2014"
       //desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       //descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
- ]
+  ]
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -183,7 +221,7 @@ const workExperiences = {
       company: "Diet.qa/ Qatar",
       companylogo: require("./assets/images/DietQa.png"),
       date: "Avril 2021 – Avril 2024",
-      descBullets:[
+      descBullets: [
         "Former les nouveaux employés et assurer la formation continue de l'ensemble du personnel.",
         "Chercher des solutions pour réduire le gaspillage et les coûts d'exploitation.",
         "Participer aux comptes de résultat trimestriels."
@@ -195,7 +233,7 @@ const workExperiences = {
       company: "CSM GIAS",
       companylogo: require("./assets/images/Csm.png"),
       date: "Octobre 20219 – Avril 2021",
-      descBullets:[
+      descBullets: [
         "Évaluer les fournisseurs en fonction du prix, de la qualité et des délais de livraison.",
         "Participer à des réunions, des salons professionnels et des conférences pour se renseigner sur les nouvelles tendances du secteur et nouer des contacts avec les fournisseurs."
       ]
@@ -242,7 +280,7 @@ const bigProjects = {
       ]
     }
   ],
-  display:false // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -251,52 +289,49 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Réalisations et certifications 🏆 "),
   subtitle:
-"Réalisations, certifications, lettres de récompense et quelques trucs sympas que j'ai faits !",
+    "Réalisations, certifications, lettres de récompense et quelques trucs sympas que j'ai faits !",
   achievementsCards: [
     {
       title: "Scrum fundamentals",
       //subtitle:
-        //"First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/ScrumFundamentals.png"),
+      //"First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      image: require("./assets/images/ScrumFundamentals.png")
       //imageAlt: "Google Code-In Logo",
       //footerLink: [
-       // {
-         // name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        //},
-        //{
-          //name: "Award Letter",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        //},
-        //{
-          //name: "Google Code-in Blog",
-          //url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-       // }
-     // ]
+      // {
+      // name: "Certification",
+      //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+      //},
+      //{
+      //name: "Award Letter",
+      //url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+      //},
+      //{
+      //name: "Google Code-in Blog",
+      //url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+      // }
+      // ]
     },
     {
       title: "Digital Marketing Fundamentals",
       //subtitle:
-        //"Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/DigitalMarketing.png"),
+      //"Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      image: require("./assets/images/DigitalMarketing.png")
     },
     {
       title: "Corporate Sales Fundamentals",
       //subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/salesFundamentals.png"),
-      
+      image: require("./assets/images/salesFundamentals.png")
     },
     {
       title: "Negotiation Associate",
       //subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/NegociationAssociate.png"),
-      
+      image: require("./assets/images/NegociationAssociate.png")
     },
     {
       title: "Six Sigma Yellow Belt",
       //subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/SixSigma.png"),
-      
+      image: require("./assets/images/SixSigma.png")
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -323,7 +358,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display:false // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -344,7 +379,6 @@ const talkSection = {
   ],
   display: false // Set false to hide this section, defaults to true
 };
-
 
 // Podcast Section
 
