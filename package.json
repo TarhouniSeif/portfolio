@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
-    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
+    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\"",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -56,6 +57,7 @@
     "electron": "^35.0.1",
     "electron-builder": "^25.1.8",
     "gh-pages": "^6.3.0",
+    "husky": "^8.0.3",
     "prettier": "^2.3.1",
     "wait-on": "^8.0.3"
   }
